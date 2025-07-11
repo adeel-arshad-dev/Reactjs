@@ -2,4 +2,6 @@ https://github.com/acdlite/react-fiber-architecture
 
 
  Read the following documentations for better
- understandings  of react fiber.
+ understandings  of react fiber. This article fully
+  describes about how react works,how thread
+  s are created in react etc.
