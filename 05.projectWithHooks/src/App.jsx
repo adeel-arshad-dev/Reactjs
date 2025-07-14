@@ -2,16 +2,19 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { useRef } from 'react'
+import { useCallback } from 'react'
+import { useEffect } from 'react'
 
 function App() {
 
   //let counter=5 this will give an error because we have declared that in usestate()
-
+  // hooks are of types useState(),useRef(),useCallback(),useEffect() etc
 
   /*
   <><><><><> use of HOOK  <><><><><><>
-  #1<> to use hook we have to write the function useState()
-  #2<> than we have to pass a value (it may be object,function,array,string etc. but preferto use the default value of variabl that we are using).
+  #1<> to use hook we have to write the function useState() as we have to change the state for now
+  #2<> than we have to pass a value (it may be object,function,array,string etc. but prefer to use the default value of variabl that we are using).
   #3<> useState() return two things in the format of arrays so we have to declae it with the variable and keep in  mind that you donot have to declare that variable again before or after useState()
   
       const [counter,setCounter]= useState(15)
