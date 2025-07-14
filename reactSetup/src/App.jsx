@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1>We have removed some files </h1>
+      <h1>React code  </h1>
     </>
   )
 }
