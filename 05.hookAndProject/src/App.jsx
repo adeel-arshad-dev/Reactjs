@@ -77,14 +77,14 @@ export default App
 setCounter(counter + 1)
 setCounter(counter + 1)
 setCounter(counter + 1)
-setCounter(counter + 1)  will its value be uncreased to 19 after
+setCounter(counter + 1)  will its value be increased to 19 after
  oneclick or not as they are written in same function of addValue?
 
 ::::::Answer::::  <>  no as we will click on add value its value will be updated by 1 only. 
 
 
-:<><><><><>:NOTE::<><><><><>  to that we have to put previous vlaue in a function
- and keep in mind that it takes call back function and return a value.
+:<><><><><>:NOTE::<><><><><>  to do that we have to put previous vlaue in a function
+ and keep in mind that it takes call back function and return a value that we have used previously.
   as i have used prevCounter but u can use counter etc
 
 ----> when the code will be written as in following example now on one click
