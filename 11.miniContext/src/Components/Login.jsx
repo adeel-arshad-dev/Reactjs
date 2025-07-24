@@ -8,8 +8,8 @@ function Login(){
     
   const {setuser}=useContext(USerContext)
 
-    const handleSubmit=(e)=>{
-        e.preventDefault();
+    const handleSubmit=(event)=>{
+        event.preventDefault();
         setuser({username,password})
     }
 
@@ -19,7 +19,7 @@ return(
 
     <input type="text"
     value={username}
-    onChange={(e)=> setusername(e.target.value)}
+    onChange={(event)=> setusername(event.target.value)}
     placeholder="Enter Your UserName"/>
   {" "}
     <input type="text" 
