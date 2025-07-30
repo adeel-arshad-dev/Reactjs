@@ -38,7 +38,7 @@ return this.login({email,password});
         }
     }
 
-    async currentUser(){
+    async getCurrentUser(){
         try {
             return await this.account.get();
         } catch (error) {
