@@ -5,7 +5,7 @@ const conf = {
     appwriteCollectionId: String(import.meta.env.VITE_APPWRITE_COLLECTION_ID),
     appwriteBucketId: String(import.meta.env.VITE_APPWRITE_BUCKET_ID),
     appwriteEndpoint: String(import.meta.env.VITE_APPWRITE_ENDPOINT),
+    tinymceApiKey: String(import.meta.env.VITE_TINYMCE_API_KEY),
 }
-// there was a name issue with the import.meta.env.VITE_APPWRITE_URL, it was later fixed in debugging video
 
 export default conf
