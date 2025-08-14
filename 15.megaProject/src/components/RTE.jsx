@@ -1,44 +1,10 @@
-// import React from 'react';
-// import { Editor } from '@tinymce/tinymce-react';
-// import { Controller } from 'react-hook-form';
-
-// export default function RTE({ name, control, label, defaultValue = "" }) {
-//   return (
-//     <div className='w-full'>
-//       {label && <label className='inline-block mb-1 pl-1'>{label}</label>}
-
-//       <Controller
-//         name={name || "content"}
-//         control={control}
-//         render={({ field: { onChange, value } }) => (
-//           <Editor
-//             value={value || defaultValue}
-//             init={{
-//               height: 500,
-//               menubar: true,
-//               plugins: [
-//                 "advlist autolink lists link image charmap preview anchor",
-//                 "searchreplace visualblocks code fullscreen",
-//                 "insertdatetime media table help wordcount"
-//               ],
-//               toolbar:
-//                 "undo redo | blocks | bold italic forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help",
-//               content_style: "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }"
-//             }}
-//             onEditorChange={onChange}
-//           />
-//         )}
-//       />
-//     </div>
-//   );
-// }
 
 
 
 import React from 'react';
 import { Editor } from '@tinymce/tinymce-react';
 import { Controller } from 'react-hook-form';
-
+import conf from '../conf/conf.js';
 export default function RTE({ name, control, label, defaultValue = "" }) {
   return (
     <div className='w-full'>
@@ -49,7 +15,7 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
         control={control}
         render={({ field: { onChange, value } }) => (
           <Editor
-            apiKey="6xu3cqs0vly41j8nm59e6f9s1v3ipil4cpyw1sgmhky6jau1" // <-- Add your API key here
+            apiKey={conf.tinymceApiKey}
             value={value || defaultValue}
             init={{
               height: 500,
